@@ -1,0 +1,7 @@
+strace -fvvvp ${PID} -o /tmp/${PID}.strace -s 4096 &
+
+less /tmp/PID.strace
+F (stream in real time to confirm data is being written to outfile )
+control c ( to stop the stream )
+& filter what your looking for
+F ( stream in real time with filter set )
